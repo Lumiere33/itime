@@ -34,11 +34,7 @@ import java.util.List;
 import java.util.Timer;
 import java.util.TimerTask;
 
-import static com.jnu.itime.NewActivity.RESULT_NEW;
 import static com.jnu.itime.TimeActivity.RESULT_DELETE;
-import static com.jnu.itime.TimeActivity.RESULT_UPDATE;
-
-import static com.jnu.itime.MainActivity.saver;
 
 
 /**
