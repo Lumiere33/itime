@@ -19,14 +19,12 @@ import android.widget.Toast;
 import com.google.android.material.navigation.NavigationView;
 
 
-import static com.jnu.itime.ListViewFragment.Timelist;
 import static com.jnu.itime.ListViewFragment.adapter;
 import static com.jnu.itime.NewActivity.RESULT_NEW;
 
 public class MainActivity extends AppCompatActivity {
 
     public static final int REQUEST_CODE_NEW = 901;
-    static Saver saver;
 
     //设置主页面FrameLayout
     FrameLayout mFrameLayout;
@@ -35,20 +33,11 @@ public class MainActivity extends AppCompatActivity {
     //设置新建按钮buttonNew
     ImageButton buttonNew;
 
-    @Override
-    protected void onDestroy() {
-        //saver.save();
-        super.onDestroy();
-
-    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
-        //saver=new Saver(this);
-        //Timelist=saver.load();
 
 
         final Toolbar mToolbar = (Toolbar) findViewById(R.id.toolbar);
